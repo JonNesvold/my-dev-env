@@ -23,14 +23,14 @@ $ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >
 
 #### VimPlug install
 `$ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \\
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'\`
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'`
 
 #### Updates and Path setups
 ###### Ruby update for neovim
 ```
-$ gem install --user neovim
 $ export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 $ export PATH="$PATH:$GEM_HOME/bin"
+$ gem install --user neovim
 $ gem update
 ```
 
