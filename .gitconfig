@@ -1,1 +1,3 @@
-/home/jon/.gitconfig
+[user]
+	email = jon.nesvold@pm.me
+	name = JonNesvold
