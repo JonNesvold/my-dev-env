@@ -40,7 +40,11 @@ $ gem update
 ###### Python update for neovim and Pydocstring
 `$ python -m pip install --user --upgrade pynvi doq`
 
-##### Polybar install
+###### Currently there is a bug in pydocstring for neovim requiring a manually set doq path. Place it in the nvim.init file.
+
+`let g:pydocstring_doq_path = "~/.local/bin/doq"`
+
+###### Polybar install
 ```
 $ git clone https://aur.archlinux.org/polybar.git && cd polybar
 $ makepkg -si
