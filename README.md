@@ -37,8 +37,8 @@ $ gem update
 ###### node update
 `$ yarn global add neovim`
 
-###### Python update for neovim
-`$ python -m pip install --user --upgrade pynvi`
+###### Python update for neovim and Pydocstring
+`$ python -m pip install --user --upgrade pynvi doq`
 
 ##### Polybar install
 ```
