@@ -182,12 +182,6 @@ export TERMINAL=alacritty
 #export BROWSER=firefox
 ## }}}
 
-# PostgresSQL credentials
-export PGSSLKEY="/home/jon/pg_keys/client.key"
-export PGSSLCERT="/home/jon/pg_certs/client.crt"
-export PGSSLROOTCERT="/home/jon/pg_certs/ca.crt"
-export PGSSLMODE="verify-full"
-
 ## KEYBINDINGS FOR TERMINAL ----------------------------------------- {{{
 # Better searching in command mode
 #bindkey -M vicmd '?' history-incremental-search-backward
@@ -216,3 +210,22 @@ if [ -f '/home/jon/google-cloud-sdk/path.zsh.inc' ]; then . '/home/jon/google-cl
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/jon/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/jon/google-cloud-sdk/completion.zsh.inc'; fi
 
+### global envars for accessing MedQuery ###
+# user creds
+export MQUSER='jdawg'
+export MQPWD='senpai_ishigaki'
+export DATABASE='medquery' 
+export DATABASE_TMP='medquery_tmp' # Dev on this one 
+export MQPORT=7745
+export MQHOST='medical-database.com'
+
+# certs
+export PGSSLKEY="/home/jon/pg_keys/client.key"
+export PGSSLCERT="/home/jon/pg_certs/client.crt"
+export PGSSLROOTCERT="/home/jon/pg_certs/ca.crt"
+export PGSSLMODE="verify-full"
+
+# datalake
+export MQACCESS_KEY='sdjkfn3@#klscdnsklefn'
+export MQSECRET_KEY='jdfrgngfdkl76#6556KNMKL123sd'
+export MINIO_HOST='storage.medical-database.com'
