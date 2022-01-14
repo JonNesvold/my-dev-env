@@ -30,10 +30,12 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " set max line length to something sensible
-let g:pymode_lint_ignore = "E501,W"
+let g:pymode_lint_ignore = 'E501,W'
+let g:pydocstring_doq_path = '~/.local/bin/doq'
+let g:pydocstring_formatter = 'numpy'
 
 " Plugins
-call plug#begin()
+call plug#begin('~/.config/nvim/plugged')
  Plug 'gosukiwi/vim-atom-dark'
  Plug 'ryanoasis/vim-devicons'
  Plug 'sirver/ultisnips'
@@ -49,6 +51,13 @@ call plug#begin()
  Plug 'hhsnopek/vim-firewatch'
  Plug 'dense-analysis/ale'
  Plug 'townk/vim-autoclose'
+ Plug 'tpope/vim-surround'
+ Plug 'neovimhaskell/haskell-vim'
+ Plug 'Pocco81/AutoSave.nvim'
+ Plug 'nvim-lualine/lualine.nvim'
+ Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
 
 colo firewatch
+
+lua require('bubbles')
